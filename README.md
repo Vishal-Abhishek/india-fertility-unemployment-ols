@@ -12,16 +12,12 @@ This project estimates the impact of **female unemployment** on **fertility rate
 Fertilityₜ = β₀ + β₁(Female Unemploymentₜ) + β₂(Urbanizationₜ) + εₜ
 ```
 
-or
-
-> **Fertilityₜ = β₀ + β₁(Female Unemploymentₜ) + β₂(Urbanizationₜ) + εₜ**
-
 ---
 
 ## Dataset
 
-| Attribute | Description |
-|-----------|-------------|
+| | |
+|---|---|
 | **Source** | World Bank – World Development Indicators (WDI) |
 | **Period** | 1991–2023 |
 | **Frequency** | Annual |
@@ -30,10 +26,10 @@ or
 
 ## Variables
 
-| Variable Type | Variable |
-|--------------|----------|
-| **Dependent Variable** | Fertility Rate |
-| **Independent Variable** | Female Unemployment Rate |
-| **Control Variable** | Urbanization Rate |
+| | |
+|---|---|
+| **Dependent** | Fertility Rate |
+| **Independent** | Female Unemployment Rate |
+| **Control** | Urbanization Rate |
 
 ---

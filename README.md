@@ -33,3 +33,34 @@ Fertilityₜ = β₀ + β₁(Female Unemploymentₜ) + β₂(Urbanizationₜ) + 
 | **Control** | Urbanization Rate |
 
 ---
+
+## Technical Workflow
+
+- Imported World Bank time-series data using `readxl`.
+- Renamed variables and standardized feature names for reproducibility.
+- Performed missing value treatment using `na.omit()`.
+- Conducted data quality checks and variable validation.
+- Specified a multiple linear regression model using R's `lm()` function.
+- Estimated model parameters using Ordinary Least Squares (OLS).
+- Evaluated statistical significance through t-tests and p-values.
+- Assessed overall model fit using R², Adjusted R², F-statistic, and Residual Standard Error.
+- Interpreted regression coefficients as marginal effects while controlling for urbanization.
+---
+
+---
+
+## Results
+
+| Variable | Coefficient | p-value |
+|-----------|------------:|---------:|
+| Female Unemployment | -0.0896 | < 0.001 |
+| Urbanization | -0.2034 | < 0.001 |
+
+### Model Performance
+
+| | |
+|---|---|
+| **R²** | 0.978 |
+| **Residual Standard Error** | 0.0965 |
+
+Both explanatory variables exhibit **statistically significant negative effects** on fertility at the **1% significance level**.
